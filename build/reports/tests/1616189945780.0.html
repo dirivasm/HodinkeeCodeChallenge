@@ -1,0 +1,88 @@
+<html><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38578610-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-38578610-5');
+    </script>
+    <title>Factoriall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- QA interview stylesheet -->
+    <link href="/static/css/qa_interview_style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container toppy">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1 class="margin-base-vertical text-center">The greatest factorial calculator!</h1>
+                <p class="input-group">
+                    <span class="input-group-addon">
+                        <span class="icon-arrow-right"></span>
+                    </span>
+                        <input type="text" id="number" class="form-control input-lg" name="number" placeholder="Enter an integer" style="background: yellow; border: 1px solid rgb(204, 204, 204);">
+                </p>
+                <p class="text-center top-space-40">
+                    <button type="submit" class="btn btn-success btn-lg" id="getFactorial" style="background: yellow; border: 2px solid red;">Calculate!</button>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <p class="text-center top-space-20" id="resultDiv" style="color: rgb(0, 0, 0);">The factorial of 50 is: 3.0414093201713376e+64</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="row-fluid">
+            <p class="margin-base-vertical text-center wor_copyright">
+                <a href="/privacy">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/terms">Privacy</a>
+            </p>
+            <!--Copyright-->
+            <p class="margin-base-vertical text-center wor_copyright">
+                © <a href="https://www.qxf2.com/?utm_source=qa-interview&amp;utm_medium=click&amp;utm_campaign=From%20QA%20Interview">Qxf2 Services</a> <script>document.write(new Date().getFullYear())</script>2021 -
+                <script>document.write(new Date().getFullYear())</script>2021
+            </p>
+        </div>
+        <!--Copyright-->
+    </div>
+    <script>
+        $("document").ready(function () {
+            $("#getFactorial").click(function () {
+                var number = $('#number').val();
+                console.log(number);
+                if (number != parseInt(number, 10)) {
+                    $("#number").css('border', 'solid 2px red');
+                    $("#resultDiv").text('Please enter an integer')
+                    $("#resultDiv").css('color', 'red');
+                } else {
+                    $("#number").css('border', 'solid 1px #ccc');
+                    var callDetails = {
+                        type: 'POST',
+                        url: '/factorial',
+                        data: {
+                            'number': number
+                        }
+                    };
+                    $.ajax(callDetails).done(function (factorial) {
+                        console.log('Hello! I am in the done part of the ajax call');
+                        console.log(factorial);
+                        $("#resultDiv").css('color', 'black');
+                        $("#resultDiv").text('The factorial of ' + number + ' is: ' + factorial.answer);
+                    });
+                }
+            });
+        });
+    </script>
+
+
+</body></html>

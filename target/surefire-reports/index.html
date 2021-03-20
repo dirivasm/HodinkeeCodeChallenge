@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\drivas\Documents\HodinkeeCodeChallenge\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.FactorialTest" class="method navigator-link" hash-for-method="factorialNegativeTest(Negative Integers, -5)">factorialNegativeTest(Negative Integers, -5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.FactorialTest" class="method navigator-link" hash-for-method="factorialTest(Four or More Digits, 1009)">factorialTest(Four or More Digits, 1009)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.NavigationTest" class="method navigator-link" hash-for-method="verifyLinks(Terms and Conditions, http://qainterview.pythonanywhere.com/terms, This is the terms and conditions ...)">verifyLinks(Terms and Conditions, http://qainterview.pythonanywhere.com/terms, This is the terms and conditions ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.NavigationTest" class="method navigator-link" hash-for-method="verifyLinks(Privacy, http://qainterview.pythonanywhere.com/privacy, This is the privacy document. We are not yet...)">verifyLinks(Privacy, http://qainterview.pythonanywhere.com/privacy, This is the privacy document. We are not yet...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.FactorialTest" class="method navigator-link" hash-for-method="factorialNegativeTest(Empty, )">factorialNegativeTest(Empty, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.FactorialTest" class="method navigator-link" hash-for-method="factorialNegativeTest(Non Numeric, Alphabet)">factorialNegativeTest(Non Numeric, Alphabet)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.FactorialTest" class="method navigator-link" hash-for-method="factorialNegativeTest(Decimals, 25.32)">factorialNegativeTest(Decimals, 25.32)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.FactorialTest" class="method navigator-link" hash-for-method="factorialTest(Between 1 and 3 Digits, 8)">factorialTest(Between 1 and 3 Digits, 8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.FactorialTest" class="method navigator-link" hash-for-method="factorialTest(Zero, 0)">factorialTest(Zero, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.NavigationTest" class="method navigator-link" hash-for-method="verifyLinks(Qxf2 Services, https://qxf2.com/?utm_source=qa-interview&amp;utm_medium=click&amp;utm_campaign=From%20QA%20I...)">verifyLinks(Qxf2 Services, https://qxf2.com/?utm_source=qa-interview&utm_medium=click&utm_campaign=From%20QA%20I...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.FactorialTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="factorialNegativeTest(Negative Integers, -5)">
+                  </a> <!-- factorialNegativeTest(Negative Integers, -5) -->
+                  <span class="method-name">factorialNegativeTest</span>
+                  <span class="parameters">(Negative Integers, -5)</span>
+                  <div class="stack-trace">Element should have text &apos;Please enter an integer&apos; {#resultDiv}
+Element: &apos;&lt;p class=&quot;text-center top-space-20&quot; id=&quot;resultDiv&quot;&gt;&lt;/p&gt;&apos;
+Screenshot: file:/C:/Users/drivas/Documents/HodinkeeCodeChallenge/target/screenshot/1616253633873.1.png
+Page source: file:/C:/Users/drivas/Documents/HodinkeeCodeChallenge/target/screenshot/1616253633873.1.html
+Timeout: 5 s.
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:128)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:80)
+	at com.sun.proxy.$Proxy8.shouldHave(Unknown Source)
+	at test.FactorialTest.factorialNegativeTest(FactorialTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="factorialTest(Four or More Digits, 1009)">
+                  </a> <!-- factorialTest(Four or More Digits, 1009) -->
+                  <span class="method-name">factorialTest</span>
+                  <span class="parameters">(Four or More Digits, 1009)</span>
+                  <div class="stack-trace">Element should have text &apos;The factorial of 1009 is:&apos; {#resultDiv}
+Element: &apos;&lt;p class=&quot;text-center top-space-20&quot; id=&quot;resultDiv&quot;&gt;&lt;/p&gt;&apos;
+Screenshot: file:/C:/Users/drivas/Documents/HodinkeeCodeChallenge/target/screenshot/1616253623885.0.png
+Page source: file:/C:/Users/drivas/Documents/HodinkeeCodeChallenge/target/screenshot/1616253623885.0.html
+Timeout: 5 s.
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:128)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:80)
+	at com.sun.proxy.$Proxy8.shouldHave(Unknown Source)
+	at test.FactorialTest.factorialTest(FactorialTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.NavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLinks(Terms and Conditions, http://qainterview.pythonanywhere.com/terms, This is the terms and conditions ...)">
+                  </a> <!-- verifyLinks(Terms and Conditions, http://qainterview.pythonanywhere.com/terms, This is the terms and conditions ...) -->
+                  <span class="method-name">verifyLinks</span>
+                  <span class="parameters">(Terms and Conditions, http://qainterview.pythonanywhere.com/terms, This is the terms and conditions document. We are not yet ready with it. Stay tuned!)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [http://qainterview.pythonanywhere.com/terms] but found [http://qainterview.pythonanywhere.com/privacy]
+	at test.NavigationTest.verifyLinks(NavigationTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLinks(Privacy, http://qainterview.pythonanywhere.com/privacy, This is the privacy document. We are not yet...)">
+                  </a> <!-- verifyLinks(Privacy, http://qainterview.pythonanywhere.com/privacy, This is the privacy document. We are not yet...) -->
+                  <span class="method-name">verifyLinks</span>
+                  <span class="parameters">(Privacy, http://qainterview.pythonanywhere.com/privacy, This is the privacy document. We are not yet ready with it. Stay tuned!)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [http://qainterview.pythonanywhere.com/privacy] but found [http://qainterview.pythonanywhere.com/terms]
+	at test.NavigationTest.verifyLinks(NavigationTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.FactorialTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="factorialNegativeTest(Empty, )">
+                  </a> <!-- factorialNegativeTest(Empty, ) -->
+                  <span class="method-name">factorialNegativeTest</span>
+                  <span class="parameters">(Empty, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="factorialNegativeTest(Non Numeric, Alphabet)">
+                  </a> <!-- factorialNegativeTest(Non Numeric, Alphabet) -->
+                  <span class="method-name">factorialNegativeTest</span>
+                  <span class="parameters">(Non Numeric, Alphabet)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="factorialNegativeTest(Decimals, 25.32)">
+                  </a> <!-- factorialNegativeTest(Decimals, 25.32) -->
+                  <span class="method-name">factorialNegativeTest</span>
+                  <span class="parameters">(Decimals, 25.32)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="factorialTest(Between 1 and 3 Digits, 8)">
+                  </a> <!-- factorialTest(Between 1 and 3 Digits, 8) -->
+                  <span class="method-name">factorialTest</span>
+                  <span class="parameters">(Between 1 and 3 Digits, 8)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="factorialTest(Zero, 0)">
+                  </a> <!-- factorialTest(Zero, 0) -->
+                  <span class="method-name">factorialTest</span>
+                  <span class="parameters">(Zero, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.NavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLinks(Qxf2 Services, https://qxf2.com/?utm_source=qa-interview&amp;utm_medium=click&amp;utm_campaign=From%20QA%20I...)">
+                  </a> <!-- verifyLinks(Qxf2 Services, https://qxf2.com/?utm_source=qa-interview&utm_medium=click&utm_campaign=From%20QA%20I...) -->
+                  <span class="method-name">verifyLinks</span>
+                  <span class="parameters">(Qxf2 Services, https://qxf2.com/?utm_source=qa-interview&utm_medium=click&utm_campaign=From%20QA%20Interview, QA for startups)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\drivas\Documents\HodinkeeCodeChallenge\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Hodinkee Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.FactorialTest&quot;/&gt;
+      &lt;class name=&quot;test.NavigationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Hodinkee Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Hodinkee Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'factorialNegativeTest')
+data.setCell(0, 2, 'test.FactorialTest')
+data.setCell(0, 3, 5829);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'factorialTest')
+data.setCell(1, 2, 'test.FactorialTest')
+data.setCell(1, 3, 5792);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLinks')
+data.setCell(2, 2, 'test.NavigationTest')
+data.setCell(2, 3, 2707);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'factorialTest')
+data.setCell(3, 2, 'test.FactorialTest')
+data.setCell(3, 3, 930);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'factorialTest')
+data.setCell(4, 2, 'test.FactorialTest')
+data.setCell(4, 3, 753);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'factorialNegativeTest')
+data.setCell(5, 2, 'test.FactorialTest')
+data.setCell(5, 3, 425);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'factorialNegativeTest')
+data.setCell(6, 2, 'test.FactorialTest')
+data.setCell(6, 3, 405);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'factorialNegativeTest')
+data.setCell(7, 2, 'test.FactorialTest')
+data.setCell(7, 3, 315);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLinks')
+data.setCell(8, 2, 'test.NavigationTest')
+data.setCell(8, 3, 238);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyLinks')
+data.setCell(9, 2, 'test.NavigationTest')
+data.setCell(9, 3, 235);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.NavigationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.FactorialTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">factorialTest(Zero, 0)</span>
+                <span class="method-start">5897 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=factorialTest status=SUCCESS method=FactorialTest.factorialTest(java.lang.String,ja...)</span>
+                <span class="method-start">6829 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">6830 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">factorialTest(Between 1 and 3 Digits, 8)</span>
+                <span class="method-start">6981 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=factorialTest status=SUCCESS method=FactorialTest.factorialTest(java.lang.String,ja...)</span>
+                <span class="method-start">7734 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">7735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">factorialTest(Four or More Digits, 1009)</span>
+                <span class="method-start">7864 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=factorialTest status=FAILURE method=FactorialTest.factorialTest(java.lang.String,ja...)</span>
+                <span class="method-start">13659 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">14925 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">factorialNegativeTest(Negative Integers, -5)</span>
+                <span class="method-start">17783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=factorialNegativeTest status=FAILURE method=FactorialTest.factorialNegativeTest(jav...)</span>
+                <span class="method-start">23612 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">24339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">factorialNegativeTest(Decimals, 25.32)</span>
+                <span class="method-start">27144 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=factorialNegativeTest status=SUCCESS method=FactorialTest.factorialNegativeTest(jav...)</span>
+                <span class="method-start">27569 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">27570 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">factorialNegativeTest(Non Numeric, Alphabet)</span>
+                <span class="method-start">27771 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=factorialNegativeTest status=SUCCESS method=FactorialTest.factorialNegativeTest(jav...)</span>
+                <span class="method-start">28176 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">28176 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">factorialNegativeTest(Empty, )</span>
+                <span class="method-start">28311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=factorialNegativeTest status=SUCCESS method=FactorialTest.factorialNegativeTest(jav...)</span>
+                <span class="method-start">28626 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.NavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">28627 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLinks(Terms and Conditions, http://qainterview.pythonanywhere.com/terms, This is the terms and conditions ...)</span>
+                <span class="method-start">28761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyLinks status=FAILURE method=NavigationTest.verifyLinks(java.lang.String,java....)</span>
+                <span class="method-start">28997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">29712 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLinks(Privacy, http://qainterview.pythonanywhere.com/privacy, This is the privacy document. We are not yet...)</span>
+                <span class="method-start">32514 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyLinks status=FAILURE method=NavigationTest.verifyLinks(java.lang.String,java....)</span>
+                <span class="method-start">32753 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">33481 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLinks(Qxf2 Services, https://qxf2.com/?utm_source=qa-interview&utm_medium=click&utm_campaign=From%20QA%20I...)</span>
+                <span class="method-start">36292 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyLinks status=SUCCESS method=NavigationTest.verifyLinks(java.lang.String,java....)</span>
+                <span class="method-start">38999 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

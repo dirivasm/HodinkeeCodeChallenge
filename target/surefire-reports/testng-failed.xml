@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Hodinkee Test(failed)" verbose="0">
+    <classes>
+      <class name="test.FactorialTest">
+        <methods>
+          <include name="factorialNegativeTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="factorialTest" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- test.FactorialTest -->
+      <class name="test.NavigationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyLinks" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- test.NavigationTest -->
+    </classes>
+  </test> <!-- Hodinkee Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

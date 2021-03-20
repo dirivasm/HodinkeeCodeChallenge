@@ -1,0 +1,6 @@
+alternativetest\SeleniumBaseTest.class
+alternativetest\SeleniumFactorialTest.class
+test\BaseTest.class
+test\FactorialTest.class
+alternativetest\SeleniumNavigationTest.class
+test\NavigationTest.class

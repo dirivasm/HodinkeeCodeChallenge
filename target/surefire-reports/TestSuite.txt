@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 40.706 s <<< FAILURE! - in TestSuite
+test.FactorialTest.factorialTest[Four or More Digits, 1009](3)  Time elapsed: 5.795 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementShould: 
+Element should have text 'The factorial of 1009 is:' {#resultDiv}
+Element: '<p class="text-center top-space-20" id="resultDiv"></p>'
+Screenshot: file:/C:/Users/drivas/Documents/HodinkeeCodeChallenge/target/screenshot/1616253623885.0.png
+Page source: file:/C:/Users/drivas/Documents/HodinkeeCodeChallenge/target/screenshot/1616253623885.0.html
+Timeout: 5 s.
+	at test.FactorialTest.factorialTest(FactorialTest.java:28)
+
+test.FactorialTest.factorialNegativeTest[Negative Integers, -5](1)  Time elapsed: 5.824 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementShould: 
+Element should have text 'Please enter an integer' {#resultDiv}
+Element: '<p class="text-center top-space-20" id="resultDiv"></p>'
+Screenshot: file:/C:/Users/drivas/Documents/HodinkeeCodeChallenge/target/screenshot/1616253633873.1.png
+Page source: file:/C:/Users/drivas/Documents/HodinkeeCodeChallenge/target/screenshot/1616253633873.1.html
+Timeout: 5 s.
+	at test.FactorialTest.factorialNegativeTest(FactorialTest.java:52)
+
+test.NavigationTest.verifyLinks[Terms and Conditions, http://qainterview.pythonanywhere.com/terms, This is the terms and conditions document. We are not yet ready with it. Stay tuned!](1)  Time elapsed: 0.236 s  <<< FAILURE!
+java.lang.AssertionError: expected [http://qainterview.pythonanywhere.com/terms] but found [http://qainterview.pythonanywhere.com/privacy]
+	at test.NavigationTest.verifyLinks(NavigationTest.java:26)
+
+test.NavigationTest.verifyLinks[Privacy, http://qainterview.pythonanywhere.com/privacy, This is the privacy document. We are not yet ready with it. Stay tuned!](2)  Time elapsed: 0.235 s  <<< FAILURE!
+java.lang.AssertionError: expected [http://qainterview.pythonanywhere.com/privacy] but found [http://qainterview.pythonanywhere.com/terms]
+	at test.NavigationTest.verifyLinks(NavigationTest.java:26)
+

@@ -1,0 +1,4 @@
+seleniumhelpers\CommonCommandsSelenium.class
+seleniumhelpers\WaitHelper.class
+selenidehelpers\ElementExtensions.class
+selenidehelpers\CommonCommands.class
