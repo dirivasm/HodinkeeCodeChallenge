@@ -50,6 +50,12 @@ PS: In conclusion, the only reason I developed this solution with both approache
     c) Edge: `mvn clean test -Dbrowser=Edge`;
     d) IE: `mvn clean test -Dbrowser=IE`;
 
+# Important note on suite execution
+
+* Expected result is: `Tests run: 10, Failures: 4, Errors: 0, Skipped: 0` - Those 4 failures are reported defects
+
+
+
 # Bugs, Test Cases and API documentation
 1. High level test cases: Open `High_Level_TC.pdf`
 
