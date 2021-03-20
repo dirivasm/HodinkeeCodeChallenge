@@ -38,17 +38,17 @@ PS: In conclusion, the only reason I developed this solution with both approache
 1. Create Run configuration:
     a) select `Maven` template;
     b) put under Working Directory path to : `HodinkeeCodeChallenge`;
-    c) put under Command line:  `clean test -Dbrowser=Chrome"`;
+    c) put under Command line:  `clean test -Dbrowser=Chrome`;
 2. Select created configuration and click `Run` button from
 
 ## To Run Test Execution as Maven from command line
 1. Open command line
 1. Go to project's root (You should see pom.xml and testng.xml files)
 3. Execute command:
-    a) Chrome: `mvn clean test -Dbrowser=Chrome"`;
-    b) Firefox: `mvn clean test -Dbrowser=Firefox"`;
-    c) Edge: `mvn clean test -Dbrowser=Edge"`;
-    d) IE: `mvn clean test -Dbrowser=IE"`;
+    a) Chrome: `mvn clean test -Dbrowser=Chrome`;
+    b) Firefox: `mvn clean test -Dbrowser=Firefox`;
+    c) Edge: `mvn clean test -Dbrowser=Edge`;
+    d) IE: `mvn clean test -Dbrowser=IE`;
 
 # Bugs, Test Cases and API documentation
 1. High level test cases: Open `High_Level_TC.pdf`
